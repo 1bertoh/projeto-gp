@@ -1,0 +1,14 @@
+//
+//_stockbox.scss
+//
+
+.mini-stats-wid {
+    transition: $transition-base;
+}
+
+.mini-stats-wid.hover-effect {
+    -webkit-box-shadow: 3px 4px 7px 0px rgba(18, 38, 63, 0.29);
+    -moz-box-shadow: 3px 4px 7px 0px rgba(18, 38, 63, 0.29);
+    box-shadow: 3px 4px 7px 0px rgba(18, 38, 63, 0.29);
+    transform: scale(1.07);
+}

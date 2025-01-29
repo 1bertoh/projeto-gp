@@ -1,0 +1,133 @@
+.checkbox {
+    font-size: 16px;
+    user-select: none;
+    // min-height: 320px;
+    padding: 20px;
+    box-sizing: content-box;
+  }
+  
+  .checkbox .tree,
+  .checkbox .tree-node,
+  .checkbox .tree-node-group {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .checkbox .tree-branch-wrapper,
+  .checkbox .tree-node__leaf {
+    outline: none;
+  }
+  
+  .checkbox .tree-node {
+    cursor: pointer;
+  }
+  
+  .checkbox .tree-node .name:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkbox .tree-node--focused .name {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .checkbox .tree-node {
+    display: inline-block;
+  }
+  
+  .checkbox .checkbox-icon {
+    margin: 0 5px;
+    vertical-align: middle;
+  }
+  
+  .checkbox button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .checkbox .arrow {
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  
+  .checkbox .arrow--open {
+    transform: rotate(90deg);
+  }
+
+  .add-modulo-icon{
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .remove-modulo-icon{
+    color: red;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .remove-modulo-icon{
+    transform: scale(1);
+    transition: .3s transform;
+  }
+  .remove-modulo-icon:hover{
+    transform: scale(1.1)
+  }
+  
+  .add-tv-icon{
+    color: green;
+    transition: .3s transform;
+    cursor: pointer;
+  }
+  .add-tv-icon:hover{
+    transform: scale(1.1);
+  }
+  .delete-tv-icon{
+    color: red;
+    margin-left: 0px;
+    transition: .3s transform;
+    cursor: pointer;
+  }
+  .delete-tv-icon:hover{
+    transform: scale(1.1);
+  }
+
+  .module-title{
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0;
+  }
+  .module-title:hover{
+    & > i {
+      animation: caret-down .5s infinite alternate;
+    }
+  }
+
+  @keyframes caret-down {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }
+
+  .module-children{
+    margin-left: 20px;
+    overflow: hidden;
+    transition: 0.5s height ease-out;
+    font-size: 15px;
+    & p{
+      margin-bottom: 0px;
+    }
+  }
+
+  .module-children[class~="expanded"] {
+    height: 100px;
+  }
+  .module-children[class~="closed"] {
+    height: 0px;
+  }
+

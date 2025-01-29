@@ -1,0 +1,17 @@
+.modetv-close-icon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 36px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    z-index: 200;
+}
+.modetv-close-icon:hover{
+    transform: scale(1.1);
+}
+
+#full-screen{
+    background-color: var(--#{$prefix}body-bg);
+    overflow: auto;
+  }
